@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكوب السحري - ون بيس | الدفع عند الاستلام</title>
+    <!-- استدعاء خط تجاري أنيق من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #e60000; /* لون أحمر ناري يناسب الأنمي */
+            --dark: #111;
+            --light: #f9f9f9;
+        }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--light);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        /* قسم الهيرو (الواجهة العلوية) */
+        .hero {
+            background-color: var(--dark);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 5px solid var(--primary);
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 900;
+        }
+        .hero p {
+            font-size: 16px;
+            color: #ccc;
+            margin-top: 10px;
+        }
+        .price-tag {
+            background: var(--primary);
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-top: 15px;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        /* قسم عرض التصاميم */
+        .designs-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .designs-section h2 {
+            font-size: 22px;
+            color: var(--dark);
+        }
+        .design-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .design-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            background: #fafafa;
+        }
+        /* يمكنك تغيير روابط الصور هنا بالصور التي أنتجناها */
+        .design-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .design-card h3 {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+        }
+        /* استمارة الطلب (Form) */
+        .order-section {
+            padding: 30px 20px;
+            background: #f1f5f9;
+            border-top: 2px dashed #ccc;
+        }
+        .order-section h2 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: 'Cairo', sans-serif;
+            box-sizing: border-box;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Cairo', sans-serif;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #cc0000;
+        }
+        .guarantee {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin-top: 15px;
+        }
+        /* إخفاء إطار الإرسال لمنع إعادة تحميل الصفحة */
+        iframe {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- الواجهة العلوية -->
+    <div class="hero">
+        <h1>الكوب السحري - ون بيس 🏴‍☠️</h1>
+        <p>أسود عندما يكون بارداً.. وتنفجر منه ألوان الأنمي عند سكب أي مشروب ساخن!</p>
+        <div class="price-tag">99 درهم فقط!</div>
+        <p style="font-weight: bold; color: #ffeb3b; font-size: 14px;">+ توصيل مجاني يداً بيد في مدينتك</p>
+    </div>
+
+    <!-- عرض التصاميم -->
+    <div class="designs-section">
+        <h2>اختر شخصيتك المفضلة 🔥</h2>
+        <div class="design-grid">
+            <!-- التصميم الأول: لوفي -->
+            <div class="design-card">
+                <!-- استبدل الرابط أدناه برابط صورتك الحقيقية التي سترفعها -->
+                <img src="https://i.ibb.co/placeholder/luffy.jpg" alt="تصميم لوفي قبل وبعد">
+                <h3>لوفي (Luffy Gear 5)</h3>
+            </div>
+            <!-- التصميم الثاني: زورو -->
+            <div class="design-card">
+                <img src="https://i.ibb.co/placeholder/zoro.jpg" alt="تصميم زورو قبل وبعد">
+                <h3>رورونوا زورو (Zoro)</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- استمارة الطلب المربوطة بـ Google Apps Script و Telegram -->
+    <div class="order-section">
+        <h2>اطلب الآن والدفع عند الاستلام 🚚</h2>
+        
+        <!-- قم بتبديل الرابط في action برابط Web App URL الخاص بك -->
+        <form action="ضع_رابط_WEB_APP_URL_الخاص_بك_هنا" method="POST" target="hidden_iframe" onsubmit="showSuccessMessage()">
+            
+            <div class="form-group">
+                <label>الاسم الكامل:</label>
+                <input type="text" name="name" required placeholder="اكتب اسمك الكامل هنا">
+            </div>
+            
+            <div class="form-group">
+                <label>رقم الهاتف:</label>
+                <input type="tel" name="phone" required placeholder="06XXXXXXXX">
+            </div>
+            
+            <div class="form-group">
+                <label>المدينة:</label>
+                <input type="text" name="city" required value="بني تدجيت" placeholder="مثال: بني تدجيت">
+            </div>
+            
+            <div class="form-group">
+                <label>العنوان بالكامل:</label>
+                <input type="text" name="address" required placeholder="الحي، اسم الشارع، ورقم المنزل">
+            </div>
+            
+            <div class="form-group">
+                <label>اختر تصميمك المفضل:</label>
+                <select name="design" required>
+                    <option value="" disabled selected>-- اضغط هنا لاختيار التصميم --</option>
+                    <option value="لوفي - Gear 5">لوفي (Luffy Gear 5)</option>
+                    <option value="زورو">رورونوا زورو (Zoro)</option>
+                    <option value="سانجي">فينسموك سانجي (Sanji)</option>
+                    <option value="آيس">بورتغاس دي آيس (Ace)</option>
+                    <option value="شانكس">شانكس ذو الشعر الأحمر (Shanks)</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="submit-btn" id="submitBtn">تأكيد الطلب 🛒</button>
+            <p class="guarantee">✅ الدفع لا يتم إلا بعد أن تستلم الكوب وتفحصه بنفسك.</p>
+        </form>
+
+        <!-- نافذة النجاح تظهر بعد الطلب -->
+        <div id="successMsg" style="display:none; text-align:center; padding:20px; background:#d4edda; color:#155724; border-radius:8px; margin-top:15px; border: 1px solid #c3e6cb;">
+            <h3 style="margin:0 0 10px 0;">🎉 تم استلام طلبك بنجاح!</h3>
+            <p style="margin:0;">سنتصل بك قريباً لتأكيد الطلب وتحديد موعد التسليم.</p>
+        </div>
+    </div>
+</div>
+
+<!-- هذا الإطار المخفي يمنع المتصفح من الانتقال لصفحة بيضاء بعد إرسال الطلب -->
+<iframe name="hidden_iframe" id="hidden_iframe"></iframe>
+
+<script>
+    // سكريبت بسيط لإظهار رسالة النجاح للمشتري
+    function showSuccessMessage() {
+        var btn = document.getElementById('submitBtn');
+        btn.innerHTML = 'جاري الإرسال... ⏳';
+        btn.style.backgroundColor = '#666';
+        
+        // ننتظر ثانية واحدة ليتم الإرسال ثم نظهر رسالة النجاح
+        setTimeout(function(){
+            document.getElementById('successMsg').style.display = 'block';
+            btn.innerHTML = 'تم الطلب بنجاح ✔️';
+            btn.disabled = true;
+        }, 1500);
+    }
+</script>
+
+</body>
+</html>
